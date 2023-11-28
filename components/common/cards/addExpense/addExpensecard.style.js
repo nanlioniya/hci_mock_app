@@ -1,4 +1,4 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet, Modal, TouchableOpacity } from "react-native";
 
 import { COLORS, SHADOWS, SIZES } from "../../../../constants";
 

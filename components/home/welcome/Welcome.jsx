@@ -7,10 +7,11 @@ import {
   Image,
   FlatList,
 } from "react-native";
-import { Stack, useRouter } from 'expo-router';
+import { Stack, useRouter, Link } from 'expo-router';
 import ScreenHeaderBtn from '../../../components/common/header/ScreenHeaderBtn'
 import styles from "./welcome.style";
 import { icons, SIZES, images } from "../../../constants";
+import { NavigationContainer } from "@react-navigation/native";
 
 const mode = ["Overview", "Map", "Gallery"];
 const graphMode = ["pie", "line"];
@@ -44,7 +45,6 @@ const Welcome = ({ searchTerm, setSearchTerm, handleClick }) => {
         return null;
     }
   }
-
 
 
   const renderContent = () => {
@@ -153,10 +153,13 @@ const Welcome = ({ searchTerm, setSearchTerm, handleClick }) => {
               style={styles.tab(activeType, item)}
               onPress={() => {
                 setActiveType(item);
-                // router.push(`/search/${item}`);
+                //router.push(`/search/${item}`);
               }}
             >
-              <Text style={styles.tabText(activeType, item)}>{item}</Text>
+              <Text style={styles.tabText(activeType, item)}>
+                  {item}
+              </Text>
+              
             </TouchableOpacity>
           )}
           keyExtractor={(item) => item}

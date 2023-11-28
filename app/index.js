@@ -77,11 +77,6 @@ const Home = () => {
     return (
         <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.
         lightWhite}}>
-
-
-
-
-
             {renderHeader()}
             <Stack.Screen
                 options={{
@@ -106,9 +101,8 @@ const Home = () => {
                 >
                     
 
-                    <Welcome 
-
-                    />
+                {/* <Welcome/> */}
+                <AddExpense/>
 
                 </View>
             </ScrollView>

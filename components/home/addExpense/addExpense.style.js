@@ -6,6 +6,22 @@ const styles = StyleSheet.create({
   container: {
     marginTop: SIZES.xLarge,
   },
+  modifyItem:{
+    flexDirection: 'row', 
+    borderBlockColor:'#ccc', 
+    borderBottomWidth:1, 
+    paddingBottom:8, 
+    marginBottom:25
+  },
+  itemTitle:{
+    marginRight:150
+  },
+  // checklist
+  checklist:{
+    paddingTop: 80,
+    paddingHorizontal:20,
+    
+  },
   header: {
     flexDirection: "row",
     justifyContent: "space-between",
