@@ -1,15 +1,20 @@
 import { StyleSheet } from "react-native";
-
-import { COLORS, FONT, SIZES } from "../../../constants";
+import { COLORS, FONT, SIZES } from "../../constants";
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
     width: "100%",
-    
   },
-  
+  linearGradient: {
+    backgroundColor: "transparent",
+    position: "absolute",
+    top: 0,
+    bottom: 0,
+    left: 0,
+    right: 0
+  },
   pieChartimageDisplay:{
     alignItems: 'center',
     flex: 1,
@@ -33,16 +38,31 @@ const styles = StyleSheet.create({
     marginBottom: 40,
   },
   
-  userName: {
+  info: {
+    fontFamily: FONT.regular,
+    fontSize: SIZES.medium,
+    color: COLORS.lightWhite,
+    marginLeft:5
+  },
+  people: {
     fontFamily: FONT.regular,
     fontSize: SIZES.small,
-    color: COLORS.secondary,
+    color: COLORS.lightWhite,
+    marginLeft:5,
+    marginRight:5,
+    marginTop:5
   },
-  welcomeMessage: {
+  profile:{
+    width: 30, 
+    height: 30, 
+    marginRight: 5,
+    borderRadius: 15
+  },
+  placeName: {
     fontFamily: FONT.bold,
-    fontSize: SIZES.xLarge,
-    color: COLORS.primary,
-    marginTop: 2,
+    fontSize: SIZES.xxLarge,
+    color: COLORS.lightWhite,
+    marginBottom:2
   },
   searchContainer: {
     justifyContent: "center",
